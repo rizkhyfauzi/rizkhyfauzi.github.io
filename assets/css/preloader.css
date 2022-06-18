@@ -1,0 +1,37 @@
+
+.preloader-finish{
+display: none;
+}
+.pre-load{
+    padding: 5px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform-origin: center center;
+    transform:translate(-50%, -50%) rotate(135deg);
+    /*change these sizes to fit into your project*/
+    width:50px;
+    height:50px;
+    
+  }
+  .pre-load hr{
+    border:0;
+    margin:0;
+    width:40%;
+    height:40%;
+    position:absolute;
+    border-radius:50%;
+    animation:spin 2s ease infinite;
+  }
+  
+  .pre-load :first-child{background:#19A68C;animation-delay:-1.5s}
+  .pre-load :nth-child(2){background:#F63D3A;animation-delay:-1s}
+  .pre-load :nth-child(3){background:#149ddd;animation-delay:-0.5s}
+  .pre-load :last-child{background:#10425a}
+  
+  @keyframes spin{
+    0%,100%{transform:translateX(200%)}
+    25%{transform:translateY(200%)}
+    50%{transform:translateX(0)}
+    75%{transform:translateY(0)}
+  }
